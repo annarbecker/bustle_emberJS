@@ -3,32 +3,32 @@
     <form>
       <div class="form-group">
         <label for="author">Author</label>
-        {{input value=author id="author"}}
+        {{input value=author id="newAuthor"}}
       </div>
 
       <div class="form-group">
         <label for="title">Title</label>
-        {{input value=title id="title"}}
+        {{input value=title id="newTitle"}}
       </div>
 
       <div class="form-group">
         <label for="timestamp">Timestamp</label>
-        {{input type="date" value=timestamp id="timestamp"}}
+        {{input type="date" value=timestamp id="newTimestamp"}}
       </div>
 
       <div class="form-group">
         <label for="image">Image URL</label>
-        {{input value=image id="image"}}
+        {{input value=image id="newImage"}}
       </div>
 
       <div class="form-group">
         <label for="story">Story</label>
-        {{textarea value=story id="story"}}
+        {{textarea value=story id="newStory"}}
       </div>
 
       <div class="form-group">
         <label for="category">category</label>
-        {{input value=category id="category"}}
+        {{input value=category id="newCategory"}}
       </div>
 
       <button {{action 'save'}}>Save</button>

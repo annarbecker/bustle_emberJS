@@ -2,9 +2,5 @@
 <p>{{article.author}}</p>
 <p>{{article.timestamp}}</p>
 <p>{{article.category}}</p>
-<button {{action 'delete' article}}>Delete</button>
-
-{{article-detail article=article destroyArticle="destroyArticle"}}
-
 {{update-article article=article update="update"}}
-<hr>
+<button {{action 'delete' article}}>Delete</button>

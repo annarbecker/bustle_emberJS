@@ -4,6 +4,6 @@
 <hr>
 <div>
   {{#each model as |article|}}
-    {{admin-article-tile article=article}}
+    {{admin-article-tile article=article destroyArticle="destroyArticle" update="update"}}
   {{/each}}
 </div>
