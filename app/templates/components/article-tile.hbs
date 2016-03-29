@@ -1,5 +1,5 @@
-<p><img src={{article.image}}></p>
-<h3>{{article.title}}</h3>
+<p>{{#link-to 'article' article.id}}<img src={{article.image}}>{{/link-to}}</p>
+<h3>{{#link-to 'article' article.id}}{{article.title}}{{/link-to}}</h3>
 <p>{{article.author}}</p>
 <p>{{article.timestamp}}</p>
 <p>{{article.category}}</p>
