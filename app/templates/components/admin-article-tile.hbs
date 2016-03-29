@@ -1,0 +1,10 @@
+<h3>{{#link-to 'article' article.id}}{{article.title}}{{/link-to}}</h3>
+<p>{{article.author}}</p>
+<p>{{article.timestamp}}</p>
+<p>{{article.category}}</p>
+<button {{action 'delete' article}}>Delete</button>
+
+{{article-detail article=article destroyArticle="destroyArticle"}}
+
+{{update-article article=article update="update"}}
+<hr>

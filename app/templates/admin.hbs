@@ -1,3 +1,9 @@
 <h1>Add New Article</h1>
 
 {{new-article save="save"}}
+<hr>
+<div>
+  {{#each model as |article|}}
+    {{admin-article-tile article=article}}
+  {{/each}}
+</div>

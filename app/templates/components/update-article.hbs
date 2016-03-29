@@ -1,0 +1,40 @@
+{{#if updateArticleForm}}
+<h1>Update Article</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=article.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title" placeholder=article.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="timestamp">Timestamp</label>
+        {{input type="date" value=timestamp id="timestamp" placeholder=article.timestamp}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image" placeholder=article.image}}
+      </div>
+
+      <div class="form-group">
+        <label for="story">Story</label>
+        {{textarea value=story id="story" placeholder=article.story}}
+      </div>
+
+      <div class="form-group">
+        <label for="category">category</label>
+        {{input value=category id="category" placeholder=article.category}}
+      </div>
+
+      <button {{action 'update' article}}>Save</button>
+    </form>
+  </div>
+{{else}}
+      <button {{action 'updateArticleForm'}}>Update</button>
+{{/if}}
